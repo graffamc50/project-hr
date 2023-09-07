@@ -4094,7 +4094,6 @@ input[type="button"].btn-block {
   ~ .custom-control-label::before {
   border-color: #e14eca;
   background-color: #e14eca;
-  box-shadow: ;
 }
 
 .custom-checkbox
@@ -18978,6 +18977,14 @@ textarea.form-control:active {
   top: 400px;
   opacity: 0.4;
 }
+.register-page .square-9 {
+  height: 100px;
+  width: 100px;
+  background-image: url("../../../../assets/img/square1.png");
+  left: 300px;
+  top: 400px;
+  opacity: 0.4;
+}
 
 .index-page,
 .landing-page,
@@ -19708,7 +19715,7 @@ hr.line-deafult {
   top: 80px;
   left: 100px;
   opacity: 0.3;
-  animation-duration: 5s;
+  animation-duration: 10s;
 }
 .section-signup .square-2 {
   height: 200px;
@@ -24043,7 +24050,9 @@ td.rdtYear:hover {
   margin-left: -5px;
 }
 
-.index-page .squares {
+
+.index-page .squares, 
+.squareOverlap {
   background: #3358f4;
   background: -webkit-linear-gradient(0deg, #3358f4 0%, #1d8cf8 100%);
   background: -o-linear-gradient(0deg, #3358f4 0%, #1d8cf8 100%);
