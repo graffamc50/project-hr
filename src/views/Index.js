@@ -2,6 +2,17 @@
 
 
 
+import React from "react";
+
+// core components
+import IndexNavbar from '../components/Navbars/IndexNavbar.js';
+import PageHeader from '../components/PageHeader/PageHeader';
+import Footer from '../components/Footer/Footer.js';
+
+// sections for demo sheet
+
+import Signup from "./Pieces/Signup.js";
+
 
 export default function Index() {
     React.useEffect(() => {
