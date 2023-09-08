@@ -40,16 +40,20 @@ export default function Signup() {
         <div className="squares square-2" />
         <div className="squares square-3" />
         <div className="squares square-4" />
-        <div className="squareOverlap" />
+        <div className="squareOverlap-B" />
         <Row className="row-grid justify-content-between align-items-center">
           <Col lg="6">
             <h3 className="display-3 text-white">
-              A simplistic solution to <br></br> a difficult problem
+              Your Job Hunt : <br />Made Simpler
             </h3>
             <p className="text-white mb-3">
-              Goddamn I did such a fuckin nice job designing all this. Blah blah blah 
-              blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-              blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+              Streamline your job search with ease. 
+                Submit your resume, complete your profile once, 
+                and enjoy a hassle-free experience. Our AI-driven algorithm is 
+                designed for precision, matching you with your dream job while 
+                assisting employers in finding candidates tailored to their needs. 
+                Sit back, relax, and let us handle the rest – we'll connect you with 
+                employers, send interview invites, and simplify the job hunt.
             </p>
             <div className="btn-wrapper">
               <Button color="primary" to="register-page" tag={Link}>
