@@ -9,9 +9,10 @@ import IndexNavbar from '../../components/Navbars/IndexNavbar';
 import Footer from '../../components/Footer/Footer';
 
 // Images
-import denys from "../../assets/img/denys.jpg"
-import fab from "../../assets/img/fabien-bazanegue.jpg"
-import mark from "../../assets/img/mark-finn.jpg"
+import code1 from "../../assets/img/ncode1.jpg"
+import code2 from "../../assets/img/ncode2.png"
+import code3 from "../../assets/img/ncode3.jpg"
+
 import dots from "../../assets/img/dots.png"
 import path4 from "../../assets/img/path4.png"
 import graffam from "../../assets/img/graffam.jpg"
@@ -25,10 +26,6 @@ import {
   Card,
   CardHeader,
   CardBody,
-  Label,
-  FormGroup,
-  Input,
-  FormText,
   NavItem,
   NavLink,
   Nav,
@@ -48,19 +45,20 @@ import {
 
 const carouselItems = [
   {
-    src: denys,
+    src: code2,
+    outerHeight: 100,
     altText: "Slide 1",
-    caption: "Big City Life, United States",
+    caption: "You make your profile",
   },
   {
-    src: fab,
+    src: code1,
     altText: "Slide 2",
-    caption: "Somewhere Beyond, United States",
+    caption: "We process the data",
   },
   {
-    src: mark,
+    src: code3,
     altText: "Slide 3",
-    caption: "Stocks, United States",
+    caption: "You recieve offers!",
   },
 ];
 
@@ -109,8 +107,9 @@ export default function AboutPage() {
                 <h1 className="profile-title text-left">Create a Profile</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description">
-                  Submit your resume, complete your profile template, fill out
-                  your preferences, and never touch it again!
+                  Submit your resume, diligently fill out your profile template 
+                  with all necessary details, specify your preferences, 
+                  and relax, knowing it's a one-time effort
                 </p>
 
                 <div className="btn-wrapper profile pt-3">
@@ -124,7 +123,7 @@ export default function AboutPage() {
                     <i className="fab fa-twitter" />
                   </Button>
                   <UncontrolledTooltip delay={0} target="tooltip639225725">
-                    Follow us
+                    Connect with Us
                   </UncontrolledTooltip>
                   <Button
                     className="btn-icon btn-round"
@@ -154,7 +153,7 @@ export default function AboutPage() {
 
 
               </Col>
-              <Col className="ml-auto mr-auto" lg="4" md="6">
+              <Col className="ml-auto mr-auto" lg="5" md="6">
                 <Card className="card-coin card-plain">
                   <CardHeader>
                     <img
@@ -162,7 +161,7 @@ export default function AboutPage() {
                       className="img-center img-fluid rounded-circle"
                       src={graffam}
                     />
-                    <h4 className="title">John Doe</h4>
+                    <h3 className="title">Colton Graffam</h3>
                   </CardHeader>
                   <CardBody>
                     <Nav
@@ -180,7 +179,7 @@ export default function AboutPage() {
                           }}
                           href="#rex"
                         >
-                          Wallet
+                          Experience
                         </NavLink>
                       </NavItem>
                       <NavItem>
@@ -194,7 +193,7 @@ export default function AboutPage() {
                           }}
                           href="#rex"
                         >
-                          Send
+                          Skills
                         </NavLink>
                       </NavItem>
                       <NavItem>
@@ -208,7 +207,7 @@ export default function AboutPage() {
                           }}
                           href="#rex"
                         >
-                          News
+                          Projects
                         </NavLink>
                       </NavItem>
                     </Nav>
@@ -217,80 +216,74 @@ export default function AboutPage() {
                       activeTab={"tab" + tabs}
                     >
                       <TabPane tabId="tab1">
-                        <Table className="tablesorter" responsive>
+                      <Table className="tablesorter" responsive>
                           <thead className="text-primary">
                             <tr>
-                              <th className="header">LANGUAGE</th>
+                              <th className="header">JOB TITLE</th>
                               <th className="header">YEARS</th>
-                              <th className="header">VALUE</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>JS</td>
-                              <td>4</td>
-                              <td>48,870.75 USD</td>
+                              <td>Junior Web Developer</td>
+                              <td>2</td>
                             </tr>
                             <tr>
-                              <td>C++</td>
-                              <td>5</td>
-                              <td>64,53.30 USD</td>
+                              <td>Software Developer</td>
+                              <td>3</td>
                             </tr>
                             <tr>
-                              <td>Dart</td>
+                              <td>Full Stack Developer</td>
                               <td>1</td>
-                              <td>18,354.96 USD</td>
                             </tr>
                           </tbody>
                         </Table>
                       </TabPane>
                       <TabPane tabId="tab2">
-                        <Row>
-                          <Label sm="3">Email</Label>
-                          <Col sm="9">
-                            <FormGroup>
-                              <Input
-                                placeholder="e.g. john@example.com"
-                                type="text"
-                              />
-                              <FormText color="default" tag="span">
-                                Please enter a valid email address.
-                              </FormText>
-                            </FormGroup>
-                          </Col>
-                        </Row>
-                        <Row>
-                          <Label sm="3">Amount</Label>
-                          <Col sm="9">
-                            <FormGroup>
-                              <Input placeholder="1.587" type="text" />
-                            </FormGroup>
-                          </Col>
-                        </Row>
-                        <Button
-                          className="btn-simple btn-icon btn-round float-right"
-                          color="primary"
-                          type="submit"
-                        >
-                          <i className="tim-icons icon-send" />
-                        </Button>
+
+                      <Table className="tablesorter" responsive>
+                          <thead className="text-primary">
+                            <tr>
+                              <th className="header"></th>
+                              <th className="header">LANGUAGES</th>
+                              <th className="header"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>JavaScript</td>
+                              <td>Python</td>
+                              <td>RUST</td>
+                            </tr>
+                            <tr>
+                              <td>C++</td>
+                              <td>CSS</td>
+                              <td>C#</td>
+                            </tr>
+                            <tr>
+                              <td>Dart</td>
+                              <td>HTML</td>
+                              <td>React</td>
+                            </tr>
+                          </tbody>
+                        </Table>
                       </TabPane>
                       <TabPane tabId="tab3">
                         <Table className="tablesorter" responsive>
                           <thead className="text-primary">
                             <tr>
-                              <th className="header">Latest Crypto News</th>
+                              <th className="header">Project Summaries</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>The Daily: Nexo to Pay on Stable...</td>
+                              <td>React Website: Freelance work using...</td>
                             </tr>
                             <tr>
-                              <td>Venezuela Begins Public of Nation...</td>
+                              <td>Python Web Scraper: Based on three...</td>
                             </tr>
                             <tr>
-                              <td>PR: BitCanna – Dutch Blockchain...</td>
+                              <td>C++ Chess Game VS AI: This modern...</td>
                             </tr>
                           </tbody>
                         </Table>
@@ -316,9 +309,10 @@ export default function AboutPage() {
                 <h1 className="profile-title text-left">Algorithm Magic</h1>
                 <h5 className="text-on-back">02</h5>
                 <p className="profile-description text-left">
-                  Our AI driven algorithm is designed to match you to your future job. 
-                  We ensure that our candidates get jobs that they enjoy and employers
-                  get employees like you. 
+                  Our AI-driven algorithm is meticulously crafted to do one thing—connect 
+                    you with your dream job effortlessly. We make sure that our candidates not 
+                    only find jobs they truly enjoy but also help employers discover candidates 
+                    just like you, perfectly tailored to their needs.
                 </p>
                 <div className="btn-wrapper pt-3">
                   <Button
@@ -352,7 +346,9 @@ export default function AboutPage() {
                     <h1 className="profile-title text-left">Receive Offers</h1>
                     <h5 className="text-on-back">03</h5>
                     <p className="profile-description text-left">
-                      Our AI-driven algorithm is designed to match you to your future job. We ensure that our candidates get jobs that they enjoy and employers get employees like you.
+                      Sit back, unwind, and let us take care of the rest. 
+                      We'll connect you with prospective employers, deliver interview invitations, 
+                      and eliminate the need for tedious, repetitive job applications – your job hunt, simplified.
                     </p>
                   </CardHeader>
                 </Card>
@@ -366,9 +362,8 @@ export default function AboutPage() {
                   <div className="description">
                     <h4 className="info-title">Find us at the office</h4>
                     <p>
-                      Bld Mihail Kogalniceanu, nr. 8, <br />
-                      7652 Bucharest, <br />
-                      Romania
+                      Tucson, Arizona <br />
+                      United States of America
                     </p>
                   </div>
                 </div>
