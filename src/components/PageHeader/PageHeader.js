@@ -18,7 +18,7 @@ export default function PageHeader() {
       <div className="squares square5" />
       <div className="squares square6" />
       <div className="squares square7" />
-      <div className="squares square8" />
+      <div className="squareOverlap-A" />
       <Container>
         <div className="content-center brand">
           <h1 className="h1-seo">PROJ • HR</h1>
