@@ -26,11 +26,11 @@ export default function Index() {
         <>
             <IndexNavbar />
             <div className="wrapper">
-                <PageHeader />
-                <div className="main">
-                    <Signup />
-                </div>
-                <Footer />
+            <PageHeader />
+            <div className="main" id="signUp">
+                <Signup />
+            </div>
+            <Footer />
             </div>
         </>
     );
