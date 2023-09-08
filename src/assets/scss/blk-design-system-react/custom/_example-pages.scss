@@ -104,7 +104,7 @@
         width: 200px;
         height: 200px;
         right: 56%;
-        bottom: -11%;
+        bottom: -15%;
         opacity: 0.2;
       }
       &.square9{
@@ -117,8 +117,19 @@
       }
     }
 } 
-
-.squareOverlap{
+.squareOverlap-A{
+  animation: move-left-right 7s infinite;
+  position: absolute;
+  transition: 0.5s ease-out;
+  overflow: hidden;
+  border-radius: 20%;
+  width: 200px;
+  height: 200px;
+  right: 56%;
+  bottom: -14%;
+  opacity: 0.2;
+}
+.squareOverlap-B{
   animation: move-left-right 7s infinite;
   position: absolute;
   transition: 0.5s ease-out;
