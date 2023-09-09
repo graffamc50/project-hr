@@ -150,9 +150,8 @@ export default function AboutPage() {
                     Follow us
                   </UncontrolledTooltip>
                 </div>
-
-
               </Col>
+        
               <Col className="ml-auto mr-auto" lg="5" md="6">
                 <Card className="card-coin card-plain">
                   <CardHeader>
@@ -380,6 +379,266 @@ export default function AboutPage() {
                     </p>
                   </div>
                 </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+    
+        <br />
+        <br />
+        <br />
+        <section className="section">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto" lg="5" md="6">
+                <Card className="card-coin card-plain">
+                    <CardHeader>
+                      <img
+                        alt="..."
+                        className="img-center img-fluid rounded-circle"
+                        src={graffam}
+                      />
+                      <h3 className="title">Colton Graffam</h3>
+                    </CardHeader>
+                    <CardBody>
+                      <Nav
+                        className="nav-tabs-primary justify-content-center"
+                        tabs
+                      >
+                        <NavItem>
+                          <NavLink
+                            className={classnames({
+                              active: tabs === 1,
+                            })}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setTabs(1);
+                            }}
+                            href="#rex"
+                          >
+                            About
+                          </NavLink>
+                        </NavItem>
+                        <NavItem>
+                          <NavLink
+                            className={classnames({
+                              active: tabs === 2,
+                            })}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setTabs(2);
+                            }}
+                            href="#rex"
+                          >
+                            Contact
+                          </NavLink>
+                        </NavItem>
+                      </Nav>
+                      <TabContent
+                        className="tab-subcategories"
+                        activeTab={"tab" + tabs}
+                      >
+                        <TabPane tabId="tab1">
+                        <Table className="tablesorter" responsive>
+                            <thead className="text-primary">
+                              <tr>
+                                <th className="header">JOB TITLE</th>
+                                <th className="header">YEARS</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Junior Web Developer</td>
+                                <td>2</td>
+                              </tr>
+                              <tr>
+                                <td>Software Developer</td>
+                                <td>3</td>
+                              </tr>
+                              <tr>
+                                <td>Full Stack Developer</td>
+                                <td>1</td>
+                              </tr>
+                            </tbody>
+                          </Table>
+                        </TabPane>
+                        <TabPane tabId="tab2">
+
+                        <Table className="tablesorter" responsive>
+                            <thead className="text-primary">
+                              <tr>
+                                <th className="header"></th>
+                                <th className="header">LANGUAGES</th>
+                                <th className="header"></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>JavaScript</td>
+                                <td>Python</td>
+                                <td>RUST</td>
+                              </tr>
+                              <tr>
+                                <td>C++</td>
+                                <td>CSS</td>
+                                <td>C#</td>
+                              </tr>
+                              <tr>
+                                <td>Dart</td>
+                                <td>HTML</td>
+                                <td>React</td>
+                              </tr>
+                            </tbody>
+                          </Table>
+                        </TabPane>
+                        <TabPane tabId="tab3">
+                          <Table className="tablesorter" responsive>
+                            <thead className="text-primary">
+                              <tr>
+                                <th className="header">Project Summaries</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>React Website: Freelance work using...</td>
+                              </tr>
+                              <tr>
+                                <td>Python Web Scraper: Based on three...</td>
+                              </tr>
+                              <tr>
+                                <td>C++ Chess Game VS AI: This modern...</td>
+                              </tr>
+                            </tbody>
+                          </Table>
+                        </TabPane>
+                      </TabContent>
+                    </CardBody>
+                  </Card>
+              </Col>
+              <Col className="ml-auto mr-auto" lg="5" md="6">
+                <Card className="card-coin card-plain">
+                  <CardHeader>
+                    <img
+                      alt="..."
+                      className="img-center img-fluid rounded-circle"
+                      src={graffam}
+                    />
+                    <h3 className="title">Andrew Tapia</h3>
+                  </CardHeader>
+                  <CardBody>
+                    <Nav
+                      className="nav-tabs-primary justify-content-center"
+                      tabs
+                    >
+                      <NavItem>
+                        <NavLink
+                          className={classnames({
+                            active: tabs === 3,
+                          })}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setTabs(3);
+                          }}
+                          href="#rex"
+                        >
+                          About
+                        </NavLink>
+                      </NavItem>
+                      <NavItem>
+                        <NavLink
+                          className={classnames({
+                            active: tabs === 4,
+                          })}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setTabs(4);
+                          }}
+                          href="#rex"
+                        >
+                          Contact
+                        </NavLink>
+                      </NavItem>
+                    </Nav>
+                    <TabContent
+                      className="tab-subcategories"
+                      activeTab={"tab" + tabs}
+                    >
+                      <TabPane tabId="tab1">
+                      <Table className="tablesorter" responsive>
+                          <thead className="text-primary">
+                            <tr>
+                              <th className="header">JOB TITLE</th>
+                              <th className="header">YEARS</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Junior Web Developer</td>
+                              <td>2</td>
+                            </tr>
+                            <tr>
+                              <td>Software Developer</td>
+                              <td>3</td>
+                            </tr>
+                            <tr>
+                              <td>Full Stack Developer</td>
+                              <td>1</td>
+                            </tr>
+                          </tbody>
+                        </Table>
+                      </TabPane>
+                      <TabPane tabId="tab2">
+
+                      <Table className="tablesorter" responsive>
+                          <thead className="text-primary">
+                            <tr>
+                              <th className="header"></th>
+                              <th className="header">LANGUAGES</th>
+                              <th className="header"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>JavaScript</td>
+                              <td>Python</td>
+                              <td>RUST</td>
+                            </tr>
+                            <tr>
+                              <td>C++</td>
+                              <td>CSS</td>
+                              <td>C#</td>
+                            </tr>
+                            <tr>
+                              <td>Dart</td>
+                              <td>HTML</td>
+                              <td>React</td>
+                            </tr>
+                          </tbody>
+                        </Table>
+                      </TabPane>
+                      <TabPane tabId="tab3">
+                        <Table className="tablesorter" responsive>
+                          <thead className="text-primary">
+                            <tr>
+                              <th className="header">Project Summaries</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>React Website: Freelance work using...</td>
+                            </tr>
+                            <tr>
+                              <td>Python Web Scraper: Based on three...</td>
+                            </tr>
+                            <tr>
+                              <td>C++ Chess Game VS AI: This modern...</td>
+                            </tr>
+                          </tbody>
+                        </Table>
+                      </TabPane>
+                    </TabContent>
+                  </CardBody>
+                </Card>
               </Col>
             </Row>
           </Container>
