@@ -6,11 +6,8 @@ import ReactDOM from 'react-dom/client';
 import Index from "./views/Index.js";
 import AboutPage from './views/Pages/AboutPage.js';
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import "./assets/scss/blk-design-system-react.scss";
-
-
+import "./assets/scss/project-hr.scss"
 import "./assets/css/nucleo-icons.css";
-import "./assets/scss/blk-design-system-react.scss";
 import "./assets/demo/demo.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
