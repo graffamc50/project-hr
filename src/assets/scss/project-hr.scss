@@ -1,0 +1,102 @@
+
+
+$asset-base-path: "../../../../assets" !default;
+
+// Core
+
+@import "project-hr-react/custom/functions";
+@import "~bootstrap/scss/functions";
+
+@import "project-hr-react/custom/variables";
+@import "~bootstrap/scss/variables";
+
+@import "project-hr-react/custom/mixins";
+@import "~bootstrap/scss/mixins";
+
+// Bootstrap components
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+
+// Custom components
+
+@import "project-hr-react/custom/alerts";
+@import "project-hr-react/custom/buttons";
+@import "project-hr-react/custom/dropdown";
+@import "project-hr-react/custom/footer";
+@import "project-hr-react/custom/forms";
+@import "project-hr-react/custom/images";
+@import "project-hr-react/custom/modal";
+@import "project-hr-react/custom/navbar";
+@import "project-hr-react/custom/type";
+@import "project-hr-react/custom/icons";
+@import "project-hr-react/custom/tables";
+@import "project-hr-react/custom/checkboxes-radio";
+@import "project-hr-react/custom/fixed-plugin";
+@import "project-hr-react/custom/pagination";
+@import "project-hr-react/custom/misc";
+@import "project-hr-react/custom/rtl";
+@import "project-hr-react/custom/input-group";
+@import "project-hr-react/custom/example-pages";
+@import "project-hr-react/custom/progress";
+@import "project-hr-react/custom/badge";
+@import "project-hr-react/custom/pills";
+@import "project-hr-react/custom/tabs";
+@import "project-hr-react/custom/info-areas";
+
+// Sections
+@import "project-hr-react/custom/sections";
+
+// Vendor / Plugins
+
+@import "project-hr-react/custom/vendor/plugin-perfect-scrollbar";
+@import "project-hr-react/custom/vendor/plugin-animate-bootstrap-notify";
+@import "project-hr-react/custom/vendor/plugin-bootstrap-switch";
+@import "project-hr-react/custom/vendor/plugin-nouislider";
+@import "project-hr-react/custom/vendor/plugin-datetimepicker";
+
+// Cards
+
+@import "project-hr-react/custom/card";
+@import "project-hr-react/custom/cards/card-chart";
+@import "project-hr-react/custom/cards/card-map";
+@import "project-hr-react/custom/cards/card-user";
+@import "project-hr-react/custom/cards/card-task";
+@import "project-hr-react/custom/cards/card-plain";
+@import "project-hr-react/custom/cards/card-register";
+@import "project-hr-react/custom/cards/card-stats";
+@import "project-hr-react/custom/cards/card-chart";
+
+// React Differences
+
+@import "project-hr-react/react/react-differences";
