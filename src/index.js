@@ -1,5 +1,5 @@
-
-
+//When needed for compiler and node module errors
+//npm rebuild node-sass
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
