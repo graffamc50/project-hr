@@ -443,7 +443,8 @@ export default function AboutPage() {
                           <Table className="tablesorter" responsive>
                             <tbody>
                               <tr>
-                                <td>I like girls</td>
+                                <td>
+                                </td>
                               </tr>
                             </tbody>
                           </Table>
@@ -464,8 +465,8 @@ export default function AboutPage() {
                                 <td></td>
                                 <td></td>
                               </tr>
-                              <tr>
-                              <td></td>
+                              <tr href="https://github.com/graffamc50" >
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -477,8 +478,8 @@ export default function AboutPage() {
                                 <td></td>
                                 <td></td>
                               </tr>
-                              <tr>
-                              <td></td>
+                              <tr href="https://www.linkedin.com/in/colton-graffam/" >
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -549,7 +550,9 @@ export default function AboutPage() {
                         <Table className="tablesorter" responsive>
                             <tbody>
                               <tr>
-                                <td>I like BOYS HAHA</td>
+                                <td>I developed the backend of Project HR AND I LIKE BOYS HAHAHAHAHA
+                                  HAHHA
+                                </td>
                               </tr>
                             </tbody>
                           </Table>
