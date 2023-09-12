@@ -9,13 +9,14 @@ import IndexNavbar from '../../components/Navbars/IndexNavbar';
 import Footer from '../../components/Footer/Footer';
 
 // Images
-import code1 from "../../assets/img/ncode1.jpg"
-import code2 from "../../assets/img/ncode2.png"
-import code3 from "../../assets/img/ncode3.jpg"
+import code1 from "../../assets/img/ncode1.jpg";
+import code2 from "../../assets/img/ncode2.png";
+import code3 from "../../assets/img/ncode3.jpg";
 
-import dots from "../../assets/img/dots.png"
-import path4 from "../../assets/img/path4.png"
-import graffam from "../../assets/img/graffam.jpg"
+import dots from "../../assets/img/dots.png";
+import path4 from "../../assets/img/path4.png";
+import graffam from "../../assets/img/graffam.jpg";
+import handybandy from "../../assets/img/bandy.jpg";
 
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
@@ -521,7 +522,7 @@ export default function AboutPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
-                      src={graffam}
+                      src={handybandy}
                     />
                     <h3 className="title">Andrew Tapia</h3>
                   </CardHeader>
