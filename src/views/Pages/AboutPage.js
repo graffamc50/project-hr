@@ -375,7 +375,6 @@ export default function AboutPage() {
                   <div className="description">
                     <h4 className="info-title">Give us a ring</h4>
                     <p>
-                      Colton Graffam <br />
                       +1 520 971 1980 <br />
                       Mon - Fri, 0900-1700 MST
                     </p>
@@ -441,54 +440,55 @@ export default function AboutPage() {
                         activeTab={"tab" + ctabs}
                       >
                         <TabPane tabId="tab1">
-                        <Table className="tablesorter" responsive>
-                            <thead className="text-primary">
-                              <tr>
-                                <th className="header">JOB TITLE</th>
-                                <th className="header">YEARS</th>
-                              </tr>
-                            </thead>
+                          <Table className="tablesorter" responsive>
                             <tbody>
                               <tr>
-                                <td>Junior Web Developer</td>
-                                <td>2</td>
-                              </tr>
-                              <tr>
-                                <td>Software Developer</td>
-                                <td>3</td>
-                              </tr>
-                              <tr>
-                                <td>Full Stack Developer</td>
-                                <td>1</td>
+                                <td>I like girls</td>
                               </tr>
                             </tbody>
                           </Table>
                         </TabPane>
                         <TabPane tabId="tab2">
-
-                        <Table className="tablesorter" responsive>
-                            <thead className="text-primary">
+                          <Table className="tablesorter" responsive>
+                            <tbody id="contactTab">
                               <tr>
-                                <th className="header"></th>
-                                <th className="header">LANGUAGES</th>
-                                <th className="header"></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>JavaScript</td>
-                                <td>Python</td>
-                                <td>RUST</td>
-                              </tr>
-                              <tr>
-                                <td>C++</td>
-                                <td>CSS</td>
-                                <td>C#</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Email</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                               </tr>
                               <tr>
-                                <td>Dart</td>
-                                <td>HTML</td>
-                                <td>React</td>
+                              <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>GitHub</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                              <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>LinkedIn</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                               </tr>
                             </tbody>
                           </Table>
@@ -546,28 +546,13 @@ export default function AboutPage() {
                       activeTab={"tab" + tabs}
                     >
                       <TabPane tabId="tab3">
-                      <Table className="tablesorter" responsive>
-                          <thead className="text-primary">
-                            <tr>
-                              <th className="header">JOB TITLE</th>
-                              <th className="header">YEARS</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Junior Web Developer</td>
-                              <td>2</td>
-                            </tr>
-                            <tr>
-                              <td>Software Developer</td>
-                              <td>3</td>
-                            </tr>
-                            <tr>
-                              <td>Full Stack Developer</td>
-                              <td>1</td>
-                            </tr>
-                          </tbody>
-                        </Table>
+                        <Table className="tablesorter" responsive>
+                            <tbody>
+                              <tr>
+                                <td>I like BOYS HAHA</td>
+                              </tr>
+                            </tbody>
+                          </Table>
                       </TabPane>
 
                       <TabPane tabId="tab4">
