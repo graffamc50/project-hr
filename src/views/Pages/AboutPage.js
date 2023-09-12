@@ -556,29 +556,46 @@ export default function AboutPage() {
                       </TabPane>
 
                       <TabPane tabId="tab4">
-                      <Table className="tablesorter" responsive>
-                          <thead className="text-primary">
+                        <Table className="tablesorter" responsive>
+                          <tbody id="contactTab">
                             <tr>
-                              <th className="header"></th>
-                              <th className="header">LANGUAGES</th>
-                              <th className="header"></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>JavaScript</td>
-                              <td>Python</td>
-                              <td>RUST</td>
-                            </tr>
-                            <tr>
-                              <td>C++</td>
-                              <td>CSS</td>
-                              <td>C#</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td>Email</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                             <tr>
-                              <td>Dart</td>
-                              <td>HTML</td>
-                              <td>React</td>
+                            <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td>GitHub</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                            <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td>LinkedIn</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
                             </tr>
                           </tbody>
                         </Table>
