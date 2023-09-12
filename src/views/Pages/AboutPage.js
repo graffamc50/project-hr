@@ -66,7 +66,8 @@ const carouselItems = [
 let ps = null;
 
 export default function AboutPage() {
-  const [tabs, setTabs] = React.useState(1);
+  const [ctabs, csetTabs] = React.useState(1);
+  const [tabs, setTabs] = React.useState(3);
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
       document.documentElement.className += " perfect-scrollbar-on";
@@ -409,11 +410,11 @@ export default function AboutPage() {
                         <NavItem>
                           <NavLink
                             className={classnames({
-                              active: tabs === 1,
+                              active: ctabs === 1,
                             })}
                             onClick={(e) => {
                               e.preventDefault();
-                              setTabs(1);
+                              csetTabs(1);
                             }}
                             href="#rex"
                           >
@@ -423,11 +424,11 @@ export default function AboutPage() {
                         <NavItem>
                           <NavLink
                             className={classnames({
-                              active: tabs === 2,
+                              active: ctabs === 2,
                             })}
                             onClick={(e) => {
                               e.preventDefault();
-                              setTabs(2);
+                              csetTabs(2);
                             }}
                             href="#rex"
                           >
@@ -437,7 +438,7 @@ export default function AboutPage() {
                       </Nav>
                       <TabContent
                         className="tab-subcategories"
-                        activeTab={"tab" + tabs}
+                        activeTab={"tab" + ctabs}
                       >
                         <TabPane tabId="tab1">
                         <Table className="tablesorter" responsive>
@@ -488,26 +489,6 @@ export default function AboutPage() {
                                 <td>Dart</td>
                                 <td>HTML</td>
                                 <td>React</td>
-                              </tr>
-                            </tbody>
-                          </Table>
-                        </TabPane>
-                        <TabPane tabId="tab3">
-                          <Table className="tablesorter" responsive>
-                            <thead className="text-primary">
-                              <tr>
-                                <th className="header">Project Summaries</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>React Website: Freelance work using...</td>
-                              </tr>
-                              <tr>
-                                <td>Python Web Scraper: Based on three...</td>
-                              </tr>
-                              <tr>
-                                <td>C++ Chess Game VS AI: This modern...</td>
                               </tr>
                             </tbody>
                           </Table>
@@ -564,7 +545,7 @@ export default function AboutPage() {
                       className="tab-subcategories"
                       activeTab={"tab" + tabs}
                     >
-                      <TabPane tabId="tab1">
+                      <TabPane tabId="tab3">
                       <Table className="tablesorter" responsive>
                           <thead className="text-primary">
                             <tr>
@@ -588,8 +569,8 @@ export default function AboutPage() {
                           </tbody>
                         </Table>
                       </TabPane>
-                      <TabPane tabId="tab2">
 
+                      <TabPane tabId="tab4">
                       <Table className="tablesorter" responsive>
                           <thead className="text-primary">
                             <tr>
@@ -613,26 +594,6 @@ export default function AboutPage() {
                               <td>Dart</td>
                               <td>HTML</td>
                               <td>React</td>
-                            </tr>
-                          </tbody>
-                        </Table>
-                      </TabPane>
-                      <TabPane tabId="tab3">
-                        <Table className="tablesorter" responsive>
-                          <thead className="text-primary">
-                            <tr>
-                              <th className="header">Project Summaries</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>React Website: Freelance work using...</td>
-                            </tr>
-                            <tr>
-                              <td>Python Web Scraper: Based on three...</td>
-                            </tr>
-                            <tr>
-                              <td>C++ Chess Game VS AI: This modern...</td>
                             </tr>
                           </tbody>
                         </Table>
