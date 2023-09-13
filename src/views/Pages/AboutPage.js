@@ -445,7 +445,7 @@ export default function AboutPage() {
                               <tr>
                                 <td>I developed the frontend of Project HR. I am currently finishing my undergrad in comp sci 
                                   , freelance web developing, and building Project HR. I love coding, traveling, and the gym.
-                                  Andy and I have been friends since high school and I am truly proud that we are making the job 
+                                  Andy and I have been best friends since high school and I am truly proud that we are making the job 
                                   seeking process so much easier for so many people.
                                 </td>
                               </tr>
