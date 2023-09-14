@@ -21,6 +21,8 @@ import handybandy from "../../assets/img/bandy.jpg";
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
 
+
+
 // reactstrap components
 import {
   Button,
