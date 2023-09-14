@@ -29,6 +29,7 @@ import {
   Col,
 } from "reactstrap";
 
+
 export default function Signup() {
   const [fullNameFocus, setFullNameFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
