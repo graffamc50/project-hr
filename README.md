@@ -1,3 +1,10 @@
+
+
+---
+permalink: ./src/index.js
+---
+
+
 ├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md
 ├── README.md
