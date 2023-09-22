@@ -16,16 +16,12 @@ const propTypes = {
   innerRef: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.func,
-    PropTypes.string
+    PropTypes.string,
   ]),
   plaintext: PropTypes.bool,
   addon: PropTypes.bool,
   className: PropTypes.string,
-  cssModule: PropTypes.object
-};
-
-const defaultProps = {
-  type: 'text'
+  cssModule: PropTypes.object,
 };
 
 class Input extends React.Component {
@@ -52,7 +48,7 @@ class Input extends React.Component {
     let {
       className,
       cssModule,
-      type,
+      type = 'text',
       bsSize,
       valid,
       invalid,
@@ -63,10 +59,9 @@ class Input extends React.Component {
       ...attributes
     } = this.props;
 
-    const checkInput = ['radio', 'checkbox'].indexOf(type) > -1;
-    const isNotaNumber = new RegExp('\\D', 'g');
+    const checkInput = ['switch', 'radio', 'checkbox'].indexOf(type) > -1;
+    const isNotaNumber = /\D/g;
 
-    const fileInput = type === 'file';
     const textareaInput = type === 'textarea';
     const selectInput = type === 'select';
     const rangeInput = type === 'range';
@@ -77,10 +72,10 @@ class Input extends React.Component {
     if (plaintext) {
       formControlClass = `${formControlClass}-plaintext`;
       Tag = tag || 'input';
-    } else if (fileInput) {
-      formControlClass = `${formControlClass}-file`;
     } else if (rangeInput) {
-      formControlClass = `${formControlClass}-range`;
+      formControlClass = 'form-range';
+    } else if (selectInput) {
+      formControlClass = 'form-select';
     } else if (checkInput) {
       if (addon) {
         formControlClass = null;
@@ -91,7 +86,7 @@ class Input extends React.Component {
 
     if (attributes.size && isNotaNumber.test(attributes.size)) {
       warnOnce(
-        'Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.'
+        'Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.',
       );
       bsSize = attributes.size;
       delete attributes.size;
@@ -102,14 +97,18 @@ class Input extends React.Component {
         className,
         invalid && 'is-invalid',
         valid && 'is-valid',
-        bsSize ? `form-control-${bsSize}` : false,
-        formControlClass
+        bsSize
+          ? selectInput
+            ? `form-select-${bsSize}`
+            : `form-control-${bsSize}`
+          : false,
+        formControlClass,
       ),
-      cssModule
+      cssModule,
     );
 
     if (Tag === 'input' || (tag && typeof tag === 'function')) {
-      attributes.type = type;
+      attributes.type = type === 'switch' ? 'checkbox' : type;
     }
 
     if (
@@ -122,16 +121,22 @@ class Input extends React.Component {
       )
     ) {
       warnOnce(
-        `Input with a type of "${type}" cannot have children. Please use "value"/"defaultValue" instead.`
+        `Input with a type of "${type}" cannot have children. Please use "value"/"defaultValue" instead.`,
       );
       delete attributes.children;
     }
 
-    return <Tag {...attributes} ref={innerRef} className={classes} aria-invalid={invalid} />;
+    return (
+      <Tag
+        {...attributes}
+        ref={innerRef}
+        className={classes}
+        aria-invalid={invalid}
+      />
+    );
   }
 }
 
 Input.propTypes = propTypes;
-Input.defaultProps = defaultProps;
 
 export default Input;
