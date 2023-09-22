@@ -21,7 +21,6 @@ root.render(
       <Route path="*" element={<Navigate to="/components" replace />} />
     </Routes>
   </BrowserRouter>
-  
 );
 
 
