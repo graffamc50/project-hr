@@ -24,6 +24,7 @@
     @content;
   }
 }
+
 @mixin badge-variant($bg) {
   color: color-yiq($bg);
   background-color: $bg;

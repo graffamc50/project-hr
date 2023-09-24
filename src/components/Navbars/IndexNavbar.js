@@ -100,7 +100,7 @@ export default function IndexNavbar() {
             </Row>
           </div>
           <Nav className="ml-auto" navbar>
-          <NavItem>
+            <NavItem>
               <NavLink href="/Index.js" >
                 <i className="tim-icons icon-single-02" />
                 Profile
@@ -125,7 +125,7 @@ export default function IndexNavbar() {
                 title="Follow us on Instagram"
               >
                 <i className="fab fa-instagram" />
-                <p className="d-lg-none d-xl-none">Instagram</p>
+                <p className="d-lg-none d-xl-none"></p>
               </NavLink>
             </NavItem>
           </Nav>
