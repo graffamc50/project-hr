@@ -103,11 +103,12 @@ export default function IndexNavbar() {
 
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink to="/home" tag={Link}>
+              <NavLink href="https://graffamc50.github.io/project-hr/" target="_blank">
                 <i className="tim-icons icon-single-02" />
                 Profile
               </NavLink>
             </NavItem>
+
             <NavItem className="active">
               <NavLink to="/about" tag={Link}>
                 <i className="tim-icons icon-world" />
