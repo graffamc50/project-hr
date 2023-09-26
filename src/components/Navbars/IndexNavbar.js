@@ -56,23 +56,28 @@ export default function IndexNavbar() {
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
         <div className="navbar-translate">
-          
-          <NavbarBrand to="/" tag={Link} id="navbar-brand">
-            <span> Graffam • Tapia </span>
-            - Project HR
-          </NavbarBrand>
-          <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Frontend - Colton <br/> Backend - Andy
-          </UncontrolledTooltip>
-          <button
-            aria-expanded={collapseOpen}
-            className="navbar-toggler navbar-toggler"
-            onClick={toggleCollapse}
-          >
-            <span className="navbar-toggler-bar bar1" />
-            <span className="navbar-toggler-bar bar2" />
-            <span className="navbar-toggler-bar bar3" />
-          </button>
+          <Row>
+            <Col md="6">
+              <NavbarBrand to="/" tag={Link} id="navbar-brand">
+                <span> Graffam • Tapia </span>
+                - Project HR
+              </NavbarBrand>
+              <UncontrolledTooltip placement="bottom" target="navbar-brand">
+                Frontend - Colton <br/> Backend - Andy
+              </UncontrolledTooltip>
+            </Col>
+            <Col md="6">
+              <button
+                aria-expanded={collapseOpen}
+                className="navbar-toggler navbar-toggler"
+                onClick={toggleCollapse}
+              >
+                <span className="navbar-toggler-bar bar1" />
+                <span className="navbar-toggler-bar bar2" />
+                <span className="navbar-toggler-bar bar3" />
+              </button>
+            </Col>
+          </Row>
         </div>
         <Collapse
           className={"justify-content-end " + collapseOut}
@@ -99,6 +104,7 @@ export default function IndexNavbar() {
               </Col>
             </Row>
           </div>
+
           <Nav className="ml-auto" navbar>
             <NavItem>
               <NavLink href="/Index.js" >
@@ -117,16 +123,6 @@ export default function IndexNavbar() {
                 <i className="tim-icons icon-settings-gear-63" />
                 Settings
               </NavLink>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/coltongraffam"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Follow us on Instagram"
-              >
-                <i className="fab fa-instagram" />
-                <p className="d-lg-none d-xl-none"></p>
-              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
@@ -134,5 +130,3 @@ export default function IndexNavbar() {
     </Navbar>
   );
 }
-
-
