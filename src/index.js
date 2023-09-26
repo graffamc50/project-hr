@@ -15,9 +15,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/home" element={<Index />} />
+      <Route path="/components" element={<Index />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="*" element={<Navigate to="https://graffamc50.github.io/project-hr/" replace />} />
     </Routes>
   </BrowserRouter>
 );
+
