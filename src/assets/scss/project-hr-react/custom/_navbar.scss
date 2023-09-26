@@ -49,9 +49,13 @@
   }
 
 
-  &.navbar-transparent{
-    background: $transparent-bg !important;
+  &.navbar-transparent {
+    background: transparent !important;
     padding-top: 25px;
+  
+    .navbar-collapse {
+      background: transparent !important; 
+    }
   }
 
   &.bg-white{
@@ -75,44 +79,8 @@
       }
 
     }
-
-    .navbar-text, .navbar-brand{
-      color: $black;
-    }
-
-    .form-control {
-      color: $black !important;
-    }
-
-    .form-control::placeholder {
-      color: $dark-gray !important;
-    }
-
   }
 
-  &.bg-dark {
-    background: $black !important;
-  }
-
-  &.bg-primary {
-    background-color: $primary !important;
-  }
-
-  &.bg-warning {
-    background-color: $warning !important;
-  }
-
-  &.bg-info {
-    background-color: $info !important;
-  }
-
-  &.bg-success {
-    background-color: darken($success, 10%) !important;
-  }
-
-  &.bg-danger {
-    background-color: $danger !important;
-  }
 
   .navbar-brand {
     position: relative;
@@ -390,7 +358,7 @@
 
 @media screen and (min-width: 992px) {
   .navbar-collapse {
-    background: none !important;
+    background: transparent !important;
   }
 
   .navbar .navbar-toggle {
