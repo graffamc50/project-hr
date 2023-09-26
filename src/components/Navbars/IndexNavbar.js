@@ -103,7 +103,7 @@ export default function IndexNavbar() {
 
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink to="/components" tag={Link}>
+              <NavLink to="/home" tag={Link}>
                 <i className="tim-icons icon-single-02" />
                 Profile
               </NavLink>
