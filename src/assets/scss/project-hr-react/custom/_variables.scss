@@ -249,6 +249,14 @@ $section-colors: map-merge((
   "darker":       $darker
 ), $section-colors);
 
+@function theme-color($color-name) {
+  $color-value: map-get($theme-colors, $color-name);
+  @if not type-of($color-value) == "color" {
+    @warn "#{$color-name} is not a color in $theme-colors map.";
+  }
+  @return $color-value;
+}
+
 // Links
 
 $link-color:                $primary !default;
@@ -404,7 +412,7 @@ $font-paragraph:               1rem          !default;
 $font-weight-base:            $font-weight-normal !default;
 $shape-height-base:            1.428571 !default;
 
-$headings-margin-bottom:      ($spacer / 2);
+$headings-margin-bottom:      calc($spacer / 2);
 $headings-font-family:        inherit !default;
 $headings-font-weight:        $font-weight-normal !default;
 $headings-line-height:        1.2 !default;
@@ -505,7 +513,7 @@ $input-btn-padding-x:         .7rem !default;
 $input-btn-line-height:       $shape-height-base !default;
 
 $input-btn-focus-width:       0 !default;
-$input-btn-focus-color:       rgba($component-active-bg, 1);
+$input-btn-focus-color:       theme-color("primary") !default;
 //$input-btn-focus-box-shadow:  0 4px 10px 0 rgba(0, 0, 0, 0.04);
 $input-btn-focus-box-shadow:  none !default;
 
@@ -642,7 +650,7 @@ $custom-control-indicator-checked-color:        $component-active-color !default
 $custom-control-indicator-checked-bg:           $component-active-bg !default;
 $custom-control-indicator-checked-border-color: $component-active-border-color !default;
 $custom-control-indicator-checked-box-shadow:   $custom-control-indicator-box-shadow !default;
-$custom-control-indicator-checked-disabled-bg:  rgba(theme-color("primary"), .5);
+$custom-control-indicator-checked-disabled-bg:  theme-color("primary") !default;
 
 $custom-control-indicator-disabled-bg:          $gray-200 !default;
 $custom-control-label-disabled-color:           $gray-600 !default;

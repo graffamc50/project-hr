@@ -3,13 +3,14 @@
 //npm rebuild node-sass
 
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Index from "./views/Index.js";
-import AboutPage from './views/Pages/AboutPage.js';
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import "./assets/scss/project-hr.scss"
-import "./assets/css/nucleo-icons.css";
-import "./assets/demo/demo.css";
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+
+import Index from './views/Index';
+import AboutPage from './views/Pages/AboutPage';
+import './assets/scss/project-hr.scss';
+import './assets/css/nucleo-icons.css';
+import './assets/demo/demo.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,6 +23,4 @@ root.render(
     </Routes>
   </BrowserRouter>
 );
-
-
 
