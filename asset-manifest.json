@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/project-hr/static/css/main.3516bb0f.css",
+    "main.js": "/project-hr/static/js/main.d885ee44.js",
+    "static/media/ncode2.png": "/project-hr/static/media/ncode2.0c745d6cdfa807bc316c.png",
+    "static/media/square-purple-1.png": "/project-hr/static/media/square-purple-1.ed3a5e3801e35e68ab23.png",
+    "static/media/ncode1.jpg": "/project-hr/static/media/ncode1.85f524cea41a3cc271cf.jpg",
+    "static/media/ncode3.jpg": "/project-hr/static/media/ncode3.4b10c1731904ad4247c3.jpg",
+    "static/media/square4.png": "/project-hr/static/media/square4.b0072563cab16ef45d81.png",
+    "static/media/square1.png": "/project-hr/static/media/square1.082ea17aaf44aed9868a.png",
+    "static/media/square3.png": "/project-hr/static/media/square3.235ea41b7cee0696448d.png",
+    "static/media/square2.png": "/project-hr/static/media/square2.8ce0f9b6a9f216ada045.png",
+    "static/media/square5.png": "/project-hr/static/media/square5.16283001f5a086113265.png",
+    "static/media/darken-night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.png": "/project-hr/static/media/darken-night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.049a2cd26a85856a45e6.png",
+    "static/media/night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.png": "/project-hr/static/media/night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.e6a30d27482b2b409f71.png",
+    "static/media/dots.png": "/project-hr/static/media/dots.1e305f981d41a2c30adb.png",
+    "static/media/bandy.jpg": "/project-hr/static/media/bandy.ebb12267b9715eae1276.jpg",
+    "static/media/graffam.jpg": "/project-hr/static/media/graffam.bdd904af5ef2d4a845e9.jpg",
+    "static/media/path4.png": "/project-hr/static/media/path4.cb1d9fab145d91e36846.png",
+    "static/media/nucleo.eot": "/project-hr/static/media/nucleo.bd5cce8bf40be5947637.eot",
+    "static/media/nucleo.ttf": "/project-hr/static/media/nucleo.35b08447277ca7bf9f09.ttf",
+    "static/media/GTicon.png": "/project-hr/static/media/GTicon.5b7e95f258bee64bbcc4.png",
+    "static/media/nucleo.woff": "/project-hr/static/media/nucleo.5c65ef4d6434bb8062a3.woff",
+    "static/media/nucleo.woff2": "/project-hr/static/media/nucleo.6dfb4833e3a0132fd1fc.woff2",
+    "index.html": "/project-hr/index.html",
+    "main.3516bb0f.css.map": "/project-hr/static/css/main.3516bb0f.css.map",
+    "main.d885ee44.js.map": "/project-hr/static/js/main.d885ee44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3516bb0f.css",
+    "static/js/main.d885ee44.js"
+  ]
+}
