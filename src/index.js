@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 //import Index from './views/Index';
 import AboutPage from './views/Pages/AboutPage';
@@ -13,12 +13,15 @@ import './assets/demo/demo.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/components" element={<Navigate to="/project-hr/" replace />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="*" element={<Navigate to="/project-hr/" replace />} />
-    </Routes>
-  </BrowserRouter>
+  <Router>
+    <Switch>
+      <Route path="/components">
+        <Redirect to="/project-hr/" />
+      </Route>
+      <Route path="/about" component={AboutPage} />
+      <Route path="*">
+        <Redirect to="/project-hr/" />
+      </Route>
+    </Switch>
+  </Router>
 );
-
