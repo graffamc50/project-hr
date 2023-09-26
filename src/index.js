@@ -15,9 +15,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/components" element={<Navigate to="https://graffamc50.github.io/project-hr/" replace />} />
+      <Route path="/components" element={<Navigate to="/project-hr/" replace />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="*" element={<Navigate to="https://graffamc50.github.io/project-hr/" replace />} />
+      <Route path="*" element={<Navigate to="/project-hr/" replace />} />
     </Routes>
   </BrowserRouter>
 );
