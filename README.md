@@ -1,10 +1,5 @@
 
 
----
-permalink: ./src/index.js
----
-
-
 
 # Getting Started with Create React App
 

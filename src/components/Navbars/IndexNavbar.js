@@ -1,7 +1,3 @@
-
-
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -107,7 +103,7 @@ export default function IndexNavbar() {
 
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/Index.js" >
+              <NavLink to="/" tag={Link}>
                 <i className="tim-icons icon-single-02" />
                 Profile
               </NavLink>
@@ -119,7 +115,7 @@ export default function IndexNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#rex" >
+              <NavLink href="#rex">
                 <i className="tim-icons icon-settings-gear-63" />
                 Settings
               </NavLink>
