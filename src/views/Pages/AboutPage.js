@@ -555,7 +555,7 @@ export default function AboutPage() {
                         <Table className="tablesorter" responsive>
                             <tbody>
                               <tr>
-                                <td>I developed the backend of Project HR AND I LIKE BOYS HAHA
+                                <td>I developed the backend of Project HR
                                 </td>
                               </tr>
                             </tbody>
