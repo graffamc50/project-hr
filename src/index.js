@@ -13,14 +13,14 @@ import './assets/demo/demo.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <Router>
+  <Router basename="/project-hr">
     <Switch>
       <Route path="/components">
-        <Redirect to="/project-hr/" />
+        <Redirect to="/project-hr" />
       </Route>
       <Route path="/about" component={AboutPage} />
       <Route path="*">
-        <Redirect to="/project-hr/" />
+        <Redirect to="/project-hr" />
       </Route>
     </Switch>
   </Router>
