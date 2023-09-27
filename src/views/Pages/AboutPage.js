@@ -454,51 +454,52 @@ export default function AboutPage() {
                             </tbody>
                           </Table>
                         </TabPane>
+
+
+
                         <TabPane tabId="tab2">
-                          <Table className="tablesorter" responsive>
-                            <tbody id="contactTab">
-                              <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>Email</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                              </tr>
-                              <tr href="https://github.com/graffamc50" >
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>GitHub</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                              </tr>
-                              <tr href="https://www.linkedin.com/in/colton-graffam/" >
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>LinkedIn</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                              </tr>
-                            </tbody>
-                          </Table>
-                        </TabPane>
+                        <Table className="tablesorter" responsive>
+                          <tbody id="contactTab">
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td ><a href="mailto:colton.b.graffam@gmail.com">Email</a></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td ><a href="https://github.com/graffamc50">GitHub</a></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td><a href="https://www.linkedin.com/in/colton-graffam/">LinkedIn</a></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </Table>
+                      </TabPane>
+
                       </TabContent>
                     </CardBody>
                   </Card>
@@ -562,51 +563,7 @@ export default function AboutPage() {
                           </Table>
                       </TabPane>
 
-                      <TabPane tabId="tab4">
-                        <Table className="tablesorter" responsive>
-                          <tbody id="contactTab">
-                            <tr>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td>Email</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                            <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td>GitHub</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                            <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td>LinkedIn</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </Table>
-                      </TabPane>
+
                     </TabContent>
                   </CardBody>
                 </Card>
