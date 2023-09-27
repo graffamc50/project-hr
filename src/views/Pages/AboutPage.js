@@ -68,8 +68,9 @@ const carouselItems = [
 let ps = null;
 
 export default function AboutPage() {
-  const [ctabs, csetTabs] = React.useState(1);
-  const [tabs, setTabs] = React.useState(3);
+  const [cTabs, cSetTabs] = React.useState(1);
+  const [aTabs, aSetTabs] = React.useState(3);
+  const [tabs, setTabs] = React.useState(5);
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
       document.documentElement.className += " perfect-scrollbar-on";
@@ -164,7 +165,7 @@ export default function AboutPage() {
                       className="img-center img-fluid rounded-circle"
                       src={graffam}
                     />
-                    <h3 className="title">Colton Graffam</h3>
+                    <h3 className="title">John Doe</h3>
                   </CardHeader>
                   <CardBody>
                     <Nav
@@ -174,11 +175,11 @@ export default function AboutPage() {
                       <NavItem>
                         <NavLink
                           className={classnames({
-                            active: tabs === 1,
+                            active: tabs === 5,
                           })}
                           onClick={(e) => {
                             e.preventDefault();
-                            setTabs(1);
+                            setTabs(5);
                           }}
                           href="#rex"
                         >
@@ -188,11 +189,11 @@ export default function AboutPage() {
                       <NavItem>
                         <NavLink
                           className={classnames({
-                            active: tabs === 2,
+                            active: tabs === 6,
                           })}
                           onClick={(e) => {
                             e.preventDefault();
-                            setTabs(2);
+                            setTabs(6);
                           }}
                           href="#rex"
                         >
@@ -202,11 +203,11 @@ export default function AboutPage() {
                       <NavItem>
                         <NavLink
                           className={classnames({
-                            active: tabs === 3,
+                            active: tabs === 7,
                           })}
                           onClick={(e) => {
                             e.preventDefault();
-                            setTabs(3);
+                            setTabs(7);
                           }}
                           href="#rex"
                         >
@@ -218,7 +219,7 @@ export default function AboutPage() {
                       className="tab-subcategories"
                       activeTab={"tab" + tabs}
                     >
-                      <TabPane tabId="tab1">
+                      <TabPane tabId="tab5">
                       <Table className="tablesorter" responsive>
                           <thead className="text-primary">
                             <tr>
@@ -242,7 +243,7 @@ export default function AboutPage() {
                           </tbody>
                         </Table>
                       </TabPane>
-                      <TabPane tabId="tab2">
+                      <TabPane tabId="tab6">
 
                       <Table className="tablesorter" responsive>
                           <thead className="text-primary">
@@ -271,7 +272,7 @@ export default function AboutPage() {
                           </tbody>
                         </Table>
                       </TabPane>
-                      <TabPane tabId="tab3">
+                      <TabPane tabId="tab7">
                         <Table className="tablesorter" responsive>
                           <thead className="text-primary">
                             <tr>
@@ -411,11 +412,11 @@ export default function AboutPage() {
                         <NavItem>
                           <NavLink
                             className={classnames({
-                              active: ctabs === 1,
+                              active: cTabs === 1,
                             })}
                             onClick={(e) => {
                               e.preventDefault();
-                              csetTabs(1);
+                              cSetTabs(1);
                             }}
                             href="#rex"
                           >
@@ -425,11 +426,11 @@ export default function AboutPage() {
                         <NavItem>
                           <NavLink
                             className={classnames({
-                              active: ctabs === 2,
+                              active: cTabs === 2,
                             })}
                             onClick={(e) => {
                               e.preventDefault();
-                              csetTabs(2);
+                              cSetTabs(2);
                             }}
                             href="#rex"
                           >
@@ -439,7 +440,7 @@ export default function AboutPage() {
                       </Nav>
                       <TabContent
                         className="tab-subcategories"
-                        activeTab={"tab" + ctabs}
+                        activeTab={"tab" + cTabs}
                       >
                         <TabPane tabId="tab1">
                           <Table className="tablesorter" responsive>
@@ -522,11 +523,11 @@ export default function AboutPage() {
                       <NavItem>
                         <NavLink
                           className={classnames({
-                            active: tabs === 3,
+                            active: aTabs === 3,
                           })}
                           onClick={(e) => {
                             e.preventDefault();
-                            setTabs(3);
+                            aSetTabs(3);
                           }}
                           href="#rex"
                         >
@@ -536,11 +537,11 @@ export default function AboutPage() {
                       <NavItem>
                         <NavLink
                           className={classnames({
-                            active: tabs === 4,
+                            active: aTabs === 4,
                           })}
                           onClick={(e) => {
                             e.preventDefault();
-                            setTabs(4);
+                            aSetTabs(4);
                           }}
                           href="#rex"
                         >
@@ -550,7 +551,7 @@ export default function AboutPage() {
                     </Nav>
                     <TabContent
                       className="tab-subcategories"
-                      activeTab={"tab" + tabs}
+                      activeTab={"tab" + aTabs}
                     >
                       <TabPane tabId="tab3">
                         <Table className="tablesorter" responsive>
