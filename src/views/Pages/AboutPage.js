@@ -558,7 +558,12 @@ export default function AboutPage() {
                         <Table className="tablesorter" responsive>
                             <tbody>
                               <tr>
-                                <td>I developed the backend of Project HR
+                                <td>
+                                  I am a biomedical engineer by training and a software engineer by passion. 
+                                  I designed the backend of this project and have had a blast learning and failing throughout. 
+                                  I love great views, breaking and fixing software, and the feeling of a productive workout. 
+                                  I have been best friends with Colt for years and I am so proud of this project's development and am so 
+                                  excited about the improvements to come! 
                                 </td>
                               </tr>
                             </tbody>
@@ -573,7 +578,7 @@ export default function AboutPage() {
                               <td></td>
                               <td></td>
                               <td></td>
-                              <td><a href="mailto:colton.b.graffam@gmail.com">Email</a></td>
+                              <td><a href="mailto:AndrewKyleTapia@gmail.com">Email</a></td>
                               <td></td>
                               <td></td>
                               <td></td>
