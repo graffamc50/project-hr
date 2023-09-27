@@ -562,7 +562,48 @@ export default function AboutPage() {
                             </tbody>
                           </Table>
                       </TabPane>
-
+                      <TabPane tabId="tab4">
+                        <Table className="tablesorter" responsive>
+                          <tbody id="contactTab">
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td><a href="mailto:colton.b.graffam@gmail.com">Email</a></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td><a href="https://github.com/Andrewt1213">GitHub</a></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td><a href="https://www.linkedin.com/in/andrew-tapia/">LinkedIn</a></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </Table>
+                      </TabPane>
 
                     </TabContent>
                   </CardBody>
