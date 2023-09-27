@@ -22,7 +22,7 @@ export default function PageHeader() {
         <div className="content-center brand">
           <h1 className="h1-seo">PROJ • HR</h1>
           <h3 className="d-none d-sm-block">
-            Simplify( Job Search )
+            Simplify( "Job-Search" )
           </h3>
           <h4>Still Under Construction</h4>
         </div>

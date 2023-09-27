@@ -277,7 +277,7 @@ export default function AboutPage() {
                         <Table className="tablesorter" responsive>
                           <thead className="text-primary">
                             <tr>
-                              <th className="header">Project Summaries</th>
+                              <th className="header">Projects</th>
                             </tr>
                           </thead>
                           <tbody>
