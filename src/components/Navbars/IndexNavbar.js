@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Index from "../../views/Index";
+import AboutPage from "../../views/Pages/AboutPage";
 
 import {
   Collapse,
   NavbarBrand,
   Navbar,
   NavItem,
-  NavLink,
   Nav,
   Container,
   Row,
@@ -103,22 +104,24 @@ export default function IndexNavbar() {
 
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink tag={Link} to="/components">
+              <Link to="/">
                 Profile
-              </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/about">
+              <Link to="/about">
                 About
-              </NavLink>
+              </Link>
             </NavItem>
+
             <NavItem>
-              <NavLink href="#rex">
+              <a href="#rex">
                 <i className="tim-icons icon-settings-gear-63" />
                 Settings
-              </NavLink>
+              </a>
             </NavItem>
           </Nav>
+
         </Collapse>
       </Container>
     </Navbar>
