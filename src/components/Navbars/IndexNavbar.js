@@ -105,11 +105,13 @@ export default function IndexNavbar() {
           <Nav className="ml-auto" navbar>
             <NavItem>
               <Link to="/">
+                <i className="tim-icons icon-single-02" />
                 Profile
               </Link>
             </NavItem>
-            <NavItem>
+            <NavItem className="active">
               <Link to="/about">
+                <i className="tim-icons icon-world" />
                 About
               </Link>
             </NavItem>
