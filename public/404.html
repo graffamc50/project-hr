@@ -7,17 +7,21 @@
     <meta charset="utf-8">
     <title>PROJ-HR</title>
     <script type="text/javascript">
-      var pathSegmentsToKeep = 0;
+      // Define the number of path segments to keep
+      var pathSegmentsToKeep = 1;
 
+      // Get the current location
       var l = window.location;
+
+      // Replace the current URL
       l.replace(
+        // Construct the new URL
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
         l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
         (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
         l.hash
       );
-
     </script>
   </head>
   <body>
