@@ -103,12 +103,12 @@ export default function IndexNavbar() {
 
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink tag={Link} to="/Index.js">
+              <NavLink tag={Link} to="/components">
                 Profile
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/AboutPage.js">
+              <NavLink tag={Link} to="/about">
                 About
               </NavLink>
             </NavItem>
