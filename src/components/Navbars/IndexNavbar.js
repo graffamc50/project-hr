@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Index from "../../views/Index";
-import AboutPage from "../../views/Pages/AboutPage";
+//import Index from "../../views/Index";
+//import AboutPage from "../../views/Pages/AboutPage";
 
 import {
   Collapse,

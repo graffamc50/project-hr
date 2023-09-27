@@ -5,7 +5,7 @@
 
 
 import React from "react";
-//import classnames from "classnames";
+import classnames from "classnames";
 import { Link } from "react-router-dom";
 import squarePurpleImage from "../../assets/img/square-purple-1.png";
 // reactstrap components
@@ -21,8 +21,9 @@ import {
   FormGroup,
   Form,
   Input,
-//  InputGroupText,
-//  InputGroup,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
   Container,
   Row,
   Col,
@@ -66,55 +67,61 @@ export default function Signup() {
               <CardHeader >
                 <CardImg alt="..." src={squarePurpleImage} />
 
-                <CardTitle>Register</CardTitle>
+                <CardTitle tag="h4">Register</CardTitle>
               </CardHeader>
               <CardBody>
                 <Form className="form">
-                  <div className="input-group">
-                    <div className={`input-group-prepend${fullNameFocus ? " input-group-focus" : ""}`}>
-                      <span className="input-group-text">
+                  <InputGroup
+                    className={classnames({
+                      "input-group-focus": fullNameFocus,
+                    })}
+                  >
+                    <InputGroupAddon addonType="prepend">
+                      <InputGroupText>
                         <i className="tim-icons icon-single-02" />
-                      </span>
-                    </div>
-                    <input
-                      className="form-control"
-                      type="text"
+                      </InputGroupText>
+                    </InputGroupAddon>
+                    <Input
                       placeholder="Full Name"
+                      type="text"
                       onFocus={(e) => setFullNameFocus(true)}
                       onBlur={(e) => setFullNameFocus(false)}
                     />
-                  </div>
-
-                  <div className="input-group">
-                    <div className={`input-group-prepend${emailFocus ? " input-group-focus" : ""}`}>
-                      <span className="input-group-text">
+                  </InputGroup>
+                  <InputGroup
+                    className={classnames({
+                      "input-group-focus": emailFocus,
+                    })}
+                  >
+                    <InputGroupAddon addonType="prepend">
+                      <InputGroupText>
                         <i className="tim-icons icon-email-85" />
-                      </span>
-                    </div>
-                    <input
-                      className="form-control"
-                      type="text"
+                      </InputGroupText>
+                    </InputGroupAddon>
+                    <Input
                       placeholder="Email"
+                      type="text"
                       onFocus={(e) => setEmailFocus(true)}
                       onBlur={(e) => setEmailFocus(false)}
                     />
-                  </div>
-
-                  <div className="input-group">
-                    <div className={`input-group-prepend${passwordFocus ? " input-group-focus" : ""}`}>
-                      <span className="input-group-text">
+                  </InputGroup>
+                  <InputGroup
+                    className={classnames({
+                      "input-group-focus": passwordFocus,
+                    })}
+                  >
+                    <InputGroupAddon addonType="prepend">
+                      <InputGroupText>
                         <i className="tim-icons icon-lock-circle" />
-                      </span>
-                    </div>
-                    <input
-                      className="form-control"
+                      </InputGroupText>
+                    </InputGroupAddon>
+                    <Input
                       placeholder="Password"
+                      type="text"
                       onFocus={(e) => setPasswordFocus(true)}
                       onBlur={(e) => setPasswordFocus(false)}
                     />
-                  </div>
-
-
+                  </InputGroup>
                   <FormGroup check className="text-left">
                     <Label check>
                       <Input type="checkbox" />
