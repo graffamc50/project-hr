@@ -17,6 +17,7 @@ import dots from "../../assets/img/dots.png";
 import path4 from "../../assets/img/path4.png";
 import graffam from "../../assets/img/graffam.jpg";
 import handybandy from "../../assets/img/bandy.jpg";
+import goku from "../../assets/img/GokuProfilePic.jpg";
 
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
@@ -163,7 +164,7 @@ export default function AboutPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
-                      src={graffam}
+                      src={goku}
                     />
                     <h3 className="title">John Doe</h3>
                   </CardHeader>
